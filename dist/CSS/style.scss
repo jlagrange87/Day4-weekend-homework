@@ -6,9 +6,6 @@ $logogray:#555D63;
 border-radius: $radius;
 }
 
-body{
-	background: white;
-}
 .header {
   height: 35px; }
 
@@ -40,6 +37,9 @@ body{
 
 .try {
   margin-top: 0;}
+.tier-parent {
+  margin-bottom:100px;
+}
 
  .tier {
   border-width: 1px;
@@ -115,15 +115,9 @@ body{
   		text-align: center;
   		margin-top:6px;
   		margin-bottom: 0;}
-.p-box-1 {
-	height:200px;
-	margin-left:25px;
-	margin-right:25px;
-	margin-top:100px;
-	margin-bottom: 20px;}
 .p-box-x {
 	height:200px;
-	margin-bottom: auto; 
+	margin-bottom: 5%; 
 	margin-left:20px;
 	margin-right:20px;}
 	.p-head {
@@ -145,14 +139,47 @@ body{
 	color:#888888;
 	margin-left:10%;
 	margin-right:10%;}
+  .u-line {
+    color:#DDDDDD;
+  }
 
 @media (min-width: 479px) {
   .background {
-    height: 400px; }
+    height: 400px;}
+
     .simple {
-    	margin-top:125px;
-    	font-size: 50px;
-    	}
+    	margin-top:145px;
+    	font-size: 50px;}
+
     	.try{
-    		margin-top:0;
-  } }
+    		margin-top:0;}
+}
+
+  @media (min-width:768px) {
+    .tier-parent {
+      margin-bottom:50px;
+     
+    }
+    .tier {
+      display:inline-block;
+      width:30%;}
+
+          .p-box-x {
+          margin-top:0;
+          width:40%;
+          display:inline-block;
+          margin-bottom: 5%;
+          margin-left:5%;
+          clear:left;
+          }
+        .p-box-parent {
+          width:100%;
+          display:inline-block;}
+          .footer {
+            margin-top:5%;
+            float:left;
+            width:100%;
+          }
+
+
+  }
