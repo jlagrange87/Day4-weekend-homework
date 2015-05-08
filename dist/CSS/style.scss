@@ -119,7 +119,8 @@ border-radius: $radius;
 	height:200px;
 	margin-bottom: 5%; 
 	margin-left:20px;
-	margin-right:20px;}
+	margin-right:20px;
+  vertical-align: top;}
 	.p-head {
 		text-align: left;
 		font-size: 18px;
@@ -158,28 +159,38 @@ border-radius: $radius;
   @media (min-width:768px) {
     .tier-parent {
       margin-bottom:50px;
-     
-    }
-    .tier {
-      display:inline-block;
-      width:30%;}
-
-          .p-box-x {
-          margin-top:0;
-          width:40%;
+      margin-left: 10px;}
+        .tier {
           display:inline-block;
-          margin-bottom: 5%;
-          margin-left:5%;
-          clear:left;
+          width:30%;}
+            .p-box-parent {
+             
+              }
+                  .p-box-x {
+                  margin-top:0;
+                  width:40%;
+                  display:inline-block;
+                  margin-bottom: 5%;
+                  margin-left:5%;
+                  clear:left;
           }
-        .p-box-parent {
-          width:100%;
-          display:inline-block;}
+        
           .footer {
             margin-top:5%;
-            float:left;
             width:100%;
           }
 
 
+  }
+@media (min-width:979px) {
+  .tier-parent {
+    max-width:980px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .p-box-parent {
+    max-width:980px;
+    margin-left:auto;
+    margin-right:auto;
+  }
   }
